@@ -1,0 +1,14 @@
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:140:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kk[m[K’ was not declared in this scope
+  140 |         std::cout << " new R: " << (p.R * [01;31m[Kk[m[K-s) << " m" << std::endl;
+      |                                           [01;31m[K^[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:140:45:[m[K [01;31m[Kerror: [m[K‘[01m[Ks[m[K’ was not declared in this scope
+  140 |         std::cout << " new R: " << (p.R * k-[01;31m[Ks[m[K) << " m" << std::endl;
+      |                                             [01;31m[K^[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:141:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kth[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+  141 |         std::cout << " new B: " << (p.B / k-[01;31m[Kth[m[K) << " m" << std::endl;
+      |                                             [01;31m[K^~[m[K
+      |                                             [32m[Ktm[m[K
+gmake[2]: *** [CMakeFiles/odom_reader.dir/build.make:76: CMakeFiles/odom_reader.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

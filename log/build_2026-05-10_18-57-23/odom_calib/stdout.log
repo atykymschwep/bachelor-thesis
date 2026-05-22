@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target odom_calib[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/odom_calib.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/odom_calib.dir/src/math.cpp.o[0m

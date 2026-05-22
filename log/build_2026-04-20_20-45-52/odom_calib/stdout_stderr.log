@@ -1,0 +1,53 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosbag2_cpp: 0.15.15 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/atykym-22/bakalarka_ws/build/odom_calib
+[35m[1mConsolidate compiler generated dependencies of target odom_reader[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/odom_reader.dir/src/main.cpp.o[0m
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:42:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart_gt_x[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   42 |     double [01;35m[Kstart_gt_x[m[K = 0, start_gt_y = 0;
+      |            [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:42:28:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart_gt_y[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   42 |     double start_gt_x = 0, [01;35m[Kstart_gt_y[m[K = 0;
+      |                            [01;35m[K^~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable odom_reader[0m
+[100%] Built target odom_reader
+-- Install configuration: ""
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_reader
+-- Set runtime path of "/home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_reader" to ""
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/package_run_dependencies/odom_calib
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/parent_prefix_path/odom_calib
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.sh
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.sh
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.dsv
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.bash
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.sh
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.zsh
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.dsv
+-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.dsv
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/packages/odom_calib
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig.cmake
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig-version.cmake
+-- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.xml

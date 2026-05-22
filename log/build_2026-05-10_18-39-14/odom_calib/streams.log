@@ -1,0 +1,26 @@
+[0.009s] Invoking command in '/home/atykym-22/bakalarka_ws/build/odom_calib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/atykym-22/bakalarka_ws/build/odom_calib -- -j8 -l8
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target odom_calib[0m
+[0.061s] [ 33%] [32mBuilding CXX object CMakeFiles/odom_calib.dir/src/main.cpp.o[0m
+[2.707s] [ 66%] [32m[1mLinking CXX executable odom_calib[0m
+[2.826s] [100%] Built target odom_calib
+[2.836s] Invoked command in '/home/atykym-22/bakalarka_ws/build/odom_calib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/atykym-22/bakalarka_ws/build/odom_calib -- -j8 -l8
+[2.845s] Invoking command in '/home/atykym-22/bakalarka_ws/build/odom_calib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/atykym-22/bakalarka_ws/build/odom_calib
+[2.852s] -- Install configuration: ""
+[2.853s] -- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_calib
+[2.853s] -- Set runtime path of "/home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_calib" to ""
+[2.853s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/package_run_dependencies/odom_calib
+[2.853s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/parent_prefix_path/odom_calib
+[2.853s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.sh
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.dsv
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.sh
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.dsv
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.bash
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.sh
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.zsh
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.dsv
+[2.854s] -- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.dsv
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/packages/odom_calib
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig.cmake
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig-version.cmake
+[2.854s] -- Up-to-date: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.xml
+[2.856s] Invoked command in '/home/atykym-22/bakalarka_ws/build/odom_calib' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/atykym-22/bakalarka_ws/build/odom_calib

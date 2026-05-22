@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000620] (odom_calib) JobQueued: {'identifier': 'odom_calib', 'dependencies': OrderedDict()}
+[0.000652] (odom_calib) JobStarted: {'identifier': 'odom_calib'}
+[0.007659] (odom_calib) JobProgress: {'identifier': 'odom_calib', 'progress': 'cmake'}
+[0.008169] (odom_calib) Command: {'cmd': ['/usr/bin/cmake', '/home/atykym-22/bakalarka_ws/src/odom_calib', '-DCMAKE_INSTALL_PREFIX=/home/atykym-22/bakalarka_ws/install/odom_calib'], 'cwd': '/home/atykym-22/bakalarka_ws/build/odom_calib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'atykym-22'), ('LC_TIME', 'sk_SK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/atykym-22'), ('OLDPWD', '/home/atykym-22/bakalarka_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('SYSTEMD_EXEC_PID', '1276'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/atykym-22/bakalarka_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'atykym-22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'atykym-22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/atykym22:@/tmp/.ICE-unix/1240,unix/atykym22:/tmp/.ICE-unix/1240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/02cf7ac6_4337_4a72_8b52_8a6c7c6eeb41'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VL5BO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/atykym-22/bakalarka_ws/build/odom_calib'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.095979] (odom_calib) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099586] (-) TimerEvent: {}
+[0.163993] (odom_calib) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.173763] (odom_calib) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199690] (-) TimerEvent: {}
+[0.238485] (odom_calib) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.243634] (odom_calib) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.244428] (odom_calib) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.245052] (odom_calib) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.247981] (odom_calib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299787] (-) TimerEvent: {}
+[0.316621] (odom_calib) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.322141] (odom_calib) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.322363] (odom_calib) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.322713] (odom_calib) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.336597] (odom_calib) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399850] (-) TimerEvent: {}
+[0.461149] (odom_calib) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499940] (-) TimerEvent: {}
+[0.546222] (odom_calib) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.595880] (odom_calib) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.600013] (-) TimerEvent: {}
+[0.601024] (odom_calib) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.609541] (odom_calib) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.624309] (odom_calib) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.642320] (odom_calib) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.687577] (odom_calib) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.690415] (odom_calib) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700092] (-) TimerEvent: {}
+[0.770473] (odom_calib) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.793859] (odom_calib) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.800168] (-) TimerEvent: {}
+[0.829547] (odom_calib) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.839394] (odom_calib) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900276] (-) TimerEvent: {}
+[0.901749] (odom_calib) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.902202] (odom_calib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.965052] (odom_calib) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.966045] (odom_calib) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000354] (-) TimerEvent: {}
+[1.015415] (odom_calib) StdoutLine: {'line': b'-- Found rosbag2_cpp: 0.15.15 (/opt/ros/humble/share/rosbag2_cpp/cmake)\n'}
+[1.053248] (odom_calib) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.066856] (odom_calib) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.084473] (odom_calib) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.100454] (-) TimerEvent: {}
+[1.153934] (odom_calib) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.154117] (odom_calib) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.154186] (odom_calib) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.154486] (odom_calib) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.155591] (odom_calib) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.155688] (odom_calib) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.156011] (odom_calib) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.157516] (odom_calib) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.166266] (odom_calib) StdoutLine: {'line': b'-- Generating done\n'}
+[1.169298] (odom_calib) StdoutLine: {'line': b'-- Build files have been written to: /home/atykym-22/bakalarka_ws/build/odom_calib\n'}
+[1.179756] (odom_calib) CommandEnded: {'returncode': 0}
+[1.180278] (odom_calib) JobProgress: {'identifier': 'odom_calib', 'progress': 'build'}
+[1.180776] (odom_calib) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/atykym-22/bakalarka_ws/build/odom_calib', '--', '-j8', '-l8'], 'cwd': '/home/atykym-22/bakalarka_ws/build/odom_calib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'atykym-22'), ('LC_TIME', 'sk_SK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/atykym-22'), ('OLDPWD', '/home/atykym-22/bakalarka_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('SYSTEMD_EXEC_PID', '1276'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/atykym-22/bakalarka_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'atykym-22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'atykym-22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/atykym22:@/tmp/.ICE-unix/1240,unix/atykym22:/tmp/.ICE-unix/1240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/02cf7ac6_4337_4a72_8b52_8a6c7c6eeb41'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VL5BO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/atykym-22/bakalarka_ws/build/odom_calib'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.200558] (-) TimerEvent: {}
+[1.226074] (odom_calib) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odom_reader.dir/src/main.cpp.o\x1b[0m\n'}
+[1.300655] (-) TimerEvent: {}
+[1.400923] (-) TimerEvent: {}
+[1.501190] (-) TimerEvent: {}
+[1.601460] (-) TimerEvent: {}
+[1.701749] (-) TimerEvent: {}
+[1.802048] (-) TimerEvent: {}
+[1.902336] (-) TimerEvent: {}
+[2.002607] (-) TimerEvent: {}
+[2.102876] (-) TimerEvent: {}
+[2.203178] (-) TimerEvent: {}
+[2.303454] (-) TimerEvent: {}
+[2.403749] (-) TimerEvent: {}
+[2.504031] (-) TimerEvent: {}
+[2.604743] (-) TimerEvent: {}
+[2.705046] (-) TimerEvent: {}
+[2.805329] (-) TimerEvent: {}
+[2.905605] (-) TimerEvent: {}
+[3.005892] (-) TimerEvent: {}
+[3.106170] (-) TimerEvent: {}
+[3.206480] (-) TimerEvent: {}
+[3.306758] (-) TimerEvent: {}
+[3.407048] (-) TimerEvent: {}
+[3.507326] (-) TimerEvent: {}
+[3.607604] (-) TimerEvent: {}
+[3.707938] (-) TimerEvent: {}
+[3.808216] (-) TimerEvent: {}
+[3.908493] (-) TimerEvent: {}
+[4.008791] (-) TimerEvent: {}
+[4.052290] (odom_calib) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odom_reader\x1b[0m\n'}
+[4.108905] (-) TimerEvent: {}
+[4.180680] (odom_calib) StdoutLine: {'line': b'[100%] Built target odom_reader\n'}
+[4.191206] (odom_calib) CommandEnded: {'returncode': 0}
+[4.191727] (odom_calib) JobProgress: {'identifier': 'odom_calib', 'progress': 'install'}
+[4.199438] (odom_calib) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/atykym-22/bakalarka_ws/build/odom_calib'], 'cwd': '/home/atykym-22/bakalarka_ws/build/odom_calib', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'atykym-22'), ('LC_TIME', 'sk_SK.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/atykym-22'), ('OLDPWD', '/home/atykym-22/bakalarka_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('SYSTEMD_EXEC_PID', '1276'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/atykym-22/bakalarka_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'atykym-22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'atykym-22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/atykym22:@/tmp/.ICE-unix/1240,unix/atykym22:/tmp/.ICE-unix/1240'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/02cf7ac6_4337_4a72_8b52_8a6c7c6eeb41'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VL5BO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/atykym-22/bakalarka_ws/build/odom_calib'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.206437] (odom_calib) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.206633] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_reader\n'}
+[4.207182] (odom_calib) StdoutLine: {'line': b'-- Set runtime path of "/home/atykym-22/bakalarka_ws/install/odom_calib/lib/odom_calib/odom_reader" to ""\n'}
+[4.207320] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/package_run_dependencies/odom_calib\n'}
+[4.207479] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/parent_prefix_path/odom_calib\n'}
+[4.207664] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.sh\n'}
+[4.207785] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/ament_prefix_path.dsv\n'}
+[4.207929] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.sh\n'}
+[4.208042] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/environment/path.dsv\n'}
+[4.208169] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.bash\n'}
+[4.208296] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.sh\n'}
+[4.208427] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.zsh\n'}
+[4.208545] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/local_setup.dsv\n'}
+[4.208677] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.dsv\n'}
+[4.208847] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/ament_index/resource_index/packages/odom_calib\n'}
+[4.208910] (-) TimerEvent: {}
+[4.209034] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig.cmake\n'}
+[4.209146] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/cmake/odom_calibConfig-version.cmake\n'}
+[4.209250] (odom_calib) StdoutLine: {'line': b'-- Installing: /home/atykym-22/bakalarka_ws/install/odom_calib/share/odom_calib/package.xml\n'}
+[4.210885] (odom_calib) CommandEnded: {'returncode': 0}
+[4.229281] (odom_calib) JobEnded: {'identifier': 'odom_calib', 'rc': 0}
+[4.229758] (-) EventReactorShutdown: {}

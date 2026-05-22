@@ -1,0 +1,2 @@
+Invoking command in '/home/atykym-22/bakalarka_ws/build/odom_calib': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/atykym-22/bakalarka_ws/build/odom_calib -- -j8 -l8
+Invoked command in '/home/atykym-22/bakalarka_ws/build/odom_calib' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/atykym-22/bakalarka_ws/build/odom_calib -- -j8 -l8

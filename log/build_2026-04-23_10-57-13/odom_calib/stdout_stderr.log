@@ -1,0 +1,49 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosbag2_cpp: 0.15.15 (/opt/ros/humble/share/rosbag2_cpp/cmake)
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/atykym-22/bakalarka_ws/build/odom_calib
+[35m[1mConsolidate compiler generated dependencies of target odom_reader[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/odom_reader.dir/src/math.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/odom_reader.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/math.cpp:2[m[K:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/include/odom_calib/math.hpp:8:67:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble y1[m[K’
+    8 | double calculate_distance(double x1, double y1, double x2, [01;31m[Kdouble y1[m[K);
+      |                                                            [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/include/odom_calib/math.hpp:8:45:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble y1[m[K’ previously declared here
+    8 | double calculate_distance(double x1, [01;36m[Kdouble y1[m[K, double x2, double y1);
+      |                                      [01;36m[K~~~~~~~^~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/math.cpp:20:67:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble y1[m[K’
+   20 | double calculate_distance(double x1, double y1, double x2, [01;31m[Kdouble y1[m[K) {
+      |                                                            [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/math.cpp:20:45:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble y1[m[K’ previously declared here
+   20 | double calculate_distance(double x1, [01;36m[Kdouble y1[m[K, double x2, double y1) {
+      |                                      [01;36m[K~~~~~~~^~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/math.cpp:[m[K In function ‘[01m[Kdouble calculate_distance(...)[m[K’:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/math.cpp:21:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ky2[m[K’ was not declared in this scope; did you mean ‘[01m[Ky1[m[K’?
+   21 |     return sqrt(pow(x2-x1, 2) + pow([01;31m[Ky2[m[K-y1, 2));
+      |                                     [01;31m[K^~[m[K
+      |                                     [32m[Ky1[m[K
+gmake[2]: *** [CMakeFiles/odom_reader.dir/build.make:90: CMakeFiles/odom_reader.dir/src/math.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:2[m[K:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/include/odom_calib/math.hpp:8:67:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kdouble y1[m[K’
+    8 | double calculate_distance(double x1, double y1, double x2, [01;31m[Kdouble y1[m[K);
+      |                                                            [01;31m[K~~~~~~~^~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/include/odom_calib/math.hpp:8:45:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble y1[m[K’ previously declared here
+    8 | double calculate_distance(double x1, [01;36m[Kdouble y1[m[K, double x2, double y1);
+      |                                      [01;36m[K~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/odom_reader.dir/build.make:76: CMakeFiles/odom_reader.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/odom_reader.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

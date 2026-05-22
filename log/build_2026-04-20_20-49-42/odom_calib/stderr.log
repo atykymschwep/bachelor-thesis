@@ -1,0 +1,7 @@
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:46:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kodom_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   46 |     double [01;35m[Kodom_x[m[K = 0, odom_y = 0, odom_theta = 0;
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/atykym-22/bakalarka_ws/src/odom_calib/src/main.cpp:46:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kodom_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   46 |     double odom_x = 0, [01;35m[Kodom_y[m[K = 0, odom_theta = 0;
+      |                        [01;35m[K^~~~~~[m[K
