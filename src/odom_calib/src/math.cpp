@@ -21,14 +21,14 @@ double calculate_distance(double x1, double y1, double x2, double y2) {
     return sqrt(pow(x2-x1, 2) + pow(y2-y1, 2));
 }
 
-// Новая функция: Кватернион -> Угол Yaw
+// quaterion to Yaw
 double quaternion_to_yaw(double x, double y, double z, double w) {
     double siny_cosp = 2.0 * (w * z + x * y);
     double cosy_cosp = 1.0 - 2.0 * (y * y + z * z);
     return std::atan2(siny_cosp, cosy_cosp);
 }
 
-// Новая функция: Правильная разница углов (с учетом перехода через PI)
+// angles
 double normalize_angle(double angle) {
     while (angle > M_PI) angle -= 2.0 * M_PI;
     while (angle < -M_PI) angle += 2.0 * M_PI;

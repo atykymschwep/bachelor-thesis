@@ -137,10 +137,10 @@ int main(int argc, char** argv) {
 
     std::cout << "- finished -\n" << std::endl;
 
-    // Защита от деления на ноль
+    // division zero
     if (sum_X2_s > 0.0001 && sum_X2_th > 0.0001) {
-        
-        // 5. Итоговый расчет коэффициентов по Накопительному МНК
+          
+        // calc koef 
         double k_s = sum_XY_s / sum_X2_s;
         double k_th = sum_XY_th / sum_X2_th;
 
