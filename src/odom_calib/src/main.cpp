@@ -35,13 +35,8 @@ int main(int argc, char** argv) {
     bool first_gt = false;
     bool first_enc = false;
 
-    double current_gt_x = 0; 
-    double current_gt_y = 0; 
-    double current_gt_yaw = 0;
-
-    double last_sync_gt_x = 0; 
-    double last_sync_gt_y = 0; 
-    double last_sync_gt_yaw = 0;
+    double current_gt_x = 0, current_gt_y = 0, current_gt_yaw = 0;
+    double last_sync_gt_x = 0, last_sync_gt_y = 0, last_yaw_gt = 0;
 
     // accum variables
     double total_dist_odom = 0;
@@ -49,7 +44,12 @@ int main(int argc, char** argv) {
     double total_th_odom = 0;
     double total_th_gt = 0;
 
-    // variabs for cumulative least squares
+    // buffer
+    double odom_ds_buffer = 0;
+    double dth_gt_buffer = 0;
+    double dth_odom_buffer = 0;
+
+    // variabs for cumulative least squares 
     double sum_X2_s = 0; 
     double sum_XY_s = 0;
     double sum_X2_th = 0;
@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
 
     int msg_count = 0;
     std::cout << std::fixed << std::setprecision(4);
-    std::cout << "- Trajectory -" << std::endl;
+    std::cout << "- Trajectory Processing (Least Squares) -" << std::endl;
 
     while (reader.has_next()) {
         auto bag_message = reader.read_next();
@@ -76,8 +76,41 @@ int main(int argc, char** argv) {
             if (!first_gt) {
                 last_sync_gt_x = current_gt_x; 
                 last_sync_gt_y = current_gt_y;
-                last_sync_gt_yaw = current_gt_yaw;
+                last_yaw_gt = current_gt_yaw;
                 first_gt = true;
+                continue;
+            }
+
+            // calc change of angle
+            double dyaw = normalize_angle(current_gt_yaw - last_yaw_gt);
+            dth_gt_buffer += dyaw;
+            last_yaw_gt = current_gt_yaw;
+
+            double d_gt = calculate_distance(last_sync_gt_x, last_sync_gt_y, current_gt_x, current_gt_y);
+            
+            // jitter (ride > 5sm and rotate > 0.1 rad)
+            if (d_gt >= 0.05 || std::abs(dth_gt_buffer) >= 0.1) {
+                
+                total_dist_gt += d_gt;
+                total_dist_odom += std::abs(odom_ds_buffer);
+                
+                total_th_gt += std::abs(dth_gt_buffer);
+                total_th_odom += std::abs(dth_odom_buffer);
+
+                // MNS: sum(X^2) a sum(X*Y), kde X = odom, Y = gt
+                sum_X2_s += total_dist_odom * total_dist_odom;
+                sum_XY_s += total_dist_odom * total_dist_gt;
+
+                sum_X2_th += total_th_odom * total_th_odom;
+                sum_XY_th += total_th_odom * total_th_gt;
+
+                // reset buffers and undate last pos
+                odom_ds_buffer = 0;
+                dth_gt_buffer = 0;
+                dth_odom_buffer = 0;
+                
+                last_sync_gt_x = current_gt_x;
+                last_sync_gt_y = current_gt_y;
             }
         }
 
@@ -104,53 +137,36 @@ int main(int argc, char** argv) {
             double ds_odom = (sl + sr) / 2.0;
             double dth_odom = (sr - sl) / p.B;
 
-            double d_gt = calculate_distance(last_sync_gt_x, last_sync_gt_y, current_gt_x, current_gt_y);
-            double dth_gt = normalize_angle(current_gt_yaw - last_sync_gt_yaw);
-
-            // update dist
-            total_dist_odom += std::abs(ds_odom);
-            total_dist_gt += d_gt;
-            
-            total_th_odom += std::abs(dth_odom);
-            total_th_gt += std::abs(dth_gt);
-
-            // formula: sum(X^2) and sum(X*Y), where X = odom, Y = gt
-            sum_X2_s += total_dist_odom * total_dist_odom;
-            sum_XY_s += total_dist_odom * total_dist_gt;
-
-            sum_X2_th += total_th_odom * total_th_odom;
-            sum_XY_th += total_th_odom * total_th_gt;
+            // collect data from odom
+            odom_ds_buffer += ds_odom;
+            dth_odom_buffer += dth_odom;
 
             // save previous values
             last_l = msg.data[0]; 
             last_r = msg.data[1];
-            last_sync_gt_x = current_gt_x; 
-            last_sync_gt_y = current_gt_y;
-            last_sync_gt_yaw = current_gt_yaw;
 
-            if (++msg_count % 50 == 0) {
-                std::cout << "DIST | GT: " << total_dist_gt << " m | Odom: " << total_dist_odom 
-                          << " m | Err: " << (total_dist_gt - total_dist_odom) << " m" << std::endl;
+            if (++msg_count % 1000 == 0) {
+                std::cout << "DIST | GT: " << total_dist_gt << " m | Odom: " << total_dist_odom << " m\r" << std::flush;
             }
         }
     }
 
-    std::cout << "- finished -\n" << std::endl;
+    std::cout << "\n- finished -\n" << std::endl;
 
-    // division zero
+    // division zero check
     if (sum_X2_s > 0.0001 && sum_X2_th > 0.0001) {
           
         // calc koef 
         double k_s = sum_XY_s / sum_X2_s;
         double k_th = sum_XY_th / sum_X2_th;
 
-        std::cout << " - Results -" << std::endl;
-        std::cout << " linial correction (k-s): " << k_s << std::endl;
-        std::cout << " angular correction (k-th): " << k_th << std::endl;
+        std::cout << " - Least Squares Results -" << std::endl;
+        std::cout << " linear correction (k_s): " << k_s << std::endl;
+        std::cout << " angular correction (k_th): " << k_th << std::endl;
         std::cout << "---" << std::endl;
         
         std::cout << " new R: " << (p.R * k_s) << " m" << std::endl;
-        std::cout << " new B: " << (p.B / k_th) << " m" << std::endl;
+        std::cout << " new B: " << (p.B * (k_s / k_th)) << " m" << std::endl;
         std::cout << "---" << std::endl;
         
     } else {
